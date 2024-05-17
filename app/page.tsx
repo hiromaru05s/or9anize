@@ -28,7 +28,7 @@ const cards = [
     id: 2,
     title: "No more categorization",
     description: "This is a description for card 2.",
-    content: "This AI will constantly organize all of your Scraps for you. No more manual work.",
+    content: "Our AI will constantly organize all of your Scraps for you. No more manual work.",
     image: "/id2.png",
   },
   {
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center  pt-20 pb-20">
-        <img src="/home.png" alt="logo" className=" pt-30 pb-4 " />
+        <img src="/home.png" alt="logo" className=" pt-20 pb-4 " />
         <div>
         <h1 className="flex flex-col pb-20 p-5">Work with clean brain.</h1>
       </div>
