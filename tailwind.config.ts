@@ -18,6 +18,7 @@ const config = {
       },
     },
     extend: {
+      
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -76,6 +77,7 @@ const config = {
       customClick: 'url(/cursor-click.png) 5 2, auto',
       customHover: 'url(/cursor-hover.png) 5 2, auto',
       customHoverClick: 'url(/cursor-hover-click.png) 5 2, auto',
+
     },
   },
   plugins: [require("tailwindcss-animate")],

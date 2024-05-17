@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import head from "next/head";
 
 
 const fontSans = FontSans({
@@ -12,8 +13,8 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Blog - hiromaru05s",
-  description: "The world of hiromaru05s",
+  title: "or9an!ze",
+  description: "The world of scraps ",
 };
 
 export default function RootLayout({
@@ -23,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
@@ -35,6 +39,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
         <Header /> 
+        
         {children}
         </ThemeProvider>
       </body>
