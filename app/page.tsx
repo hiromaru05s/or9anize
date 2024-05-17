@@ -1,34 +1,11 @@
-import Link from "next/link";
-import "./globals.css";
+import React from 'react';
 
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div>
-      <Link href="/blog" className="hover:cursor-customHover">
-        <div>Blog</div>
-      </Link>
-      <Link href="/about" className="hover:cursor-customHover customHoverClick">
-        <div>About</div>
-      </Link>
-    <h1 className="hover:cursor-customHover">aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1 className="hover:cursor-customHover">aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-    <h1>aaaaaaaaa</h1>
-
+    <div className="flex flex-col items-center justify-center min-h-screen">
 
     </div>
-    
-
-
-
-   
   );
-}
+};
+
+export default Home;
