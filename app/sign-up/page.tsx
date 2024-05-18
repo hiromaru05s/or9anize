@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label"
 
 export default function LoginForm() {
   return (
-    <Card className="mx-auto max-w-sm mt-32">
+    <Card className="mx-auto max-w-sm mt-28">
       <CardHeader>
         <CardTitle className="text-xl">Sign Up</CardTitle>
         <CardDescription>
