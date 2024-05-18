@@ -15,6 +15,7 @@ import {
 import {
   Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent
 } from "@/components/ui/card"
+import Link from "next/link"
 
 const cards = [
   {
@@ -47,9 +48,9 @@ const cards = [
   },
   {
     id: 5,
-    title: "Try it out!",
+    title: "Now try it out!",
     description: "This is a description for card 5.",
-    content: "Sign up with your email and that's it!",
+    content: "Sign up and that's it. Enjoy your journey!!",
     image: "/id5.png",
   },
 ]
@@ -73,7 +74,7 @@ const Home: React.FC = () => {
               <CarouselItem key={card.id}>
                 <div className="p-2">
                   <Card className="w-30 h-80">
-                    <CardTitle className="flex flex-col justify-center pt-4 px-7">{card.title}</CardTitle>
+                    <CardTitle className="flex flex-col justify-center pt-4 px-7 mx-auto">{card.title}</CardTitle>
                     <CardHeader>
                       <img
                         src={card.image}
@@ -88,9 +89,12 @@ const Home: React.FC = () => {
                     </CardContent>
                     {card.id === 5 && (
                     <CardFooter>
-                      <button className="px-4 py-2 bg-black text-white rounded-lg mx-auto ">
-                        Sign up
-                      </button>
+                      <Link
+                        className="mx-auto items-center justify-center px-5 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 cursor-customHover cursor-customHoverClick"
+                        href="/sign-up"
+                      >
+                        Sign Up
+                      </Link>
                     </CardFooter>
                     )}
                   </Card>
@@ -104,7 +108,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <Accordion type="single" collapsible className="w-full max-w-md mt-20 mb-12">
+        <Accordion type="single" collapsible className="w-full max-w-md mt-20 mb-12 ">
           <AccordionItem value="item-1">
             <AccordionTrigger>What is this?</AccordionTrigger>
             <AccordionContent>This is or9an!ze</AccordionContent>
