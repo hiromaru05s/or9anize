@@ -45,14 +45,14 @@ export default function LoginForm() {
             <Label htmlFor="password">Password</Label>
             <Input id="password" type="password" />
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full cursor-customHover cursor-customHoverClick">
             Create an account
           </Button>
        
         </div>
         <div className="mt-4 text-center text-sm">
           Already have an account?{" "}
-          <Link href="#" className="underline">
+          <Link href="/sign-in" className="underline cursor-customHover cursor-customHoverClick">
             Sign in
           </Link>
         </div>

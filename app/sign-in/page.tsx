@@ -31,24 +31,24 @@ export default function Dashboard() {
               <div className="flex items-center">
                 <Label htmlFor="password">Password</Label>
                 <Link
-                  href="/forgot-password"
-                  className="ml-auto inline-block text-sm underline"
+                  href="/forgotPassword"
+                  className="ml-auto inline-block text-sm underline cursor-customHover cursor-customHoverClick"
                 >
                   Forgot your password?
                 </Link>
               </div>
               <Input id="password" type="password" required />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full cursor-customHover cursor-customHoverClick">
               Login
             </Button>
-            <Button variant="outline" className="w-full">
+            <Button variant="outline" className="w-full cursor-customHover cursor-customHoverClick">
               Login with Google
             </Button>
           </div>
           <div className="mt-4 text-center text-sm">
             Don&apos;t have an account?{" "}
-            <Link href="/sign-up" className="underline">
+            <Link href="/sign-up" className="underline cursor-customHover cursor-customHoverClick">
               Sign up
             </Link>
           </div>
