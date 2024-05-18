@@ -18,7 +18,18 @@ const config = {
       },
     },
     extend: {
-      
+      screens: {
+        'mid': '1280px', // 追加するカスタムブレイクポイント
+        'lg-mid': '2050px', // 追加するカスタムブレイクポイント
+      },
+      minHeight: {
+        '700': '700px', // カスタム高さ
+        '800': '800px', // カスタム高さ
+        '900': '900px', // カスタム高さ
+      },
+      boxShadow: {
+        'custom': '0 2px 4px rgba(0, 0, 0, 0.05)', // shadow-smとshadow-mdの間くらいの影
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
